@@ -14,7 +14,7 @@ public class Main {
 
         while(b >= a){
             System.out.print(b+" ");
-            b += 2;
+            b -= 2;
         }
     }
 }
