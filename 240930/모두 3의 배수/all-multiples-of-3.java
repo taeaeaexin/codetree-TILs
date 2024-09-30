@@ -7,7 +7,7 @@ public class Main {
         int flag = 0;
         
         for(int i = 0 ; i < 5 ; i++){
-            int num = sc.nextInt()l
+            int num = sc.nextInt();
             if(num % 3 != 0){
                 break;
             }
@@ -16,6 +16,6 @@ public class Main {
             }
         }
 
-        System.out.println(flag)
+        System.out.println(flag);
     }
 }
