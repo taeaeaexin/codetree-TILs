@@ -7,32 +7,40 @@ public class Main {
         int n = sc.nextInt();
         int top = n;
         int bot = 1;
-
         while(top >= bot){
             for(int i = 0 ; i < top ; i++){
                 System.out.print("* ");
+                if(i == top-1){
+                    System.out.println();
+                }
             }
-            System.out.println();
+            
             for(int i = 0 ; i < bot ; i++){
                 System.out.print("* ");
+                if(i == bot-1){
+                    System.out.println();
+                }
             }
-            System.out.println();
             top--;
             bot++;
         }
-
         top = n;
         bot = 1;
 
         while(top > bot){
             for(int i = 0 ; i < bot ; i++){
                 System.out.print("* ");
+                if(i == bot-1){
+                    System.out.println();
+                }
             }
-            System.out.println();
+
             for(int i = 0 ; i < top ; i++){
                 System.out.print("* ");
+                if(i == top-1){
+                    System.out.println();
+                }
             }
-            System.out.println();
             top--;
             bot++;
         }
