@@ -9,7 +9,7 @@ public class Main {
         b = sc.nextInt();
         int arr[] = new int[b];
 
-        while(a > 0){
+        while(a > 1){
             a /= b;
             for(int i = 0 ; i < b ; i++){
                 if(i == a % b){
