@@ -11,14 +11,14 @@ public class Main {
 
         while(a > 1){
             a /= b;
-            for(int i = 0 ; i < b ; i++){
+            for(int i = 0 ; i <= b ; i++){
                 if(i == a % b){
                     arr[i]++;
                 }
             }
         }
 
-        for(int i = 0 ; i < b ; i++){
+        for(int i = 0 ; i <= b ; i++){
             sum += Math.pow(arr[i],2);
         }
         System.out.println(sum);
