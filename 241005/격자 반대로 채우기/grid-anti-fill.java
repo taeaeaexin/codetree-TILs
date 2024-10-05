@@ -14,11 +14,11 @@ public class Main {
             cnt++;
             arr[x][y] = cnt;
             
-            if(x == 0 && arr[x+1][y] != 0){
+            if(x == 0 && y > 0 && arr[x+1][y] != 0){
                 y--;
             }else if(x > 0 && arr[x-1][y] == 0){
                 x--;
-            }else if(x == n-1 && arr[x-1][y] != 0){
+            }else if(x == n-1 && y > 0 && arr[x-1][y] != 0){
                 y--;
             }else if(x < n-1 && arr[x+1][y] == 0){
                 x++;
