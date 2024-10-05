@@ -10,7 +10,7 @@ public class Main {
         int y = n-1;
         int arr[][] = new int[n][n];
 
-        while(cnt <= Math.pow(n,2)){
+        while(cnt < Math.pow(n,2)){
             arr[x][y] = cnt;
             
             if(x == 0 && arr[x+1][y] != 0){
