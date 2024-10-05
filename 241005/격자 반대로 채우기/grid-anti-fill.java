@@ -5,25 +5,24 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-        int cnt = 1;
+        int cnt = 0;
         int x = n-1;
         int y = n-1;
         int arr[][] = new int[n][n];
 
         while(cnt < Math.pow(n,2)){
+            cnt++;
             arr[x][y] = cnt;
             
             if(x == 0 && arr[x+1][y] != 0){
                 y--;
-            }else 
-            if(x > 0 && arr[x-1][y] == 0){
+            }else if(x > 0 && arr[x-1][y] == 0){
                 x--;
             }else if(x == n-1 && arr[x-1][y] != 0){
                 y--;
             }else if(x < n-1 && arr[x+1][y] == 0){
                 x++;
             }
-            cnt++;
         }
 
         for(int i = 0 ; i < n ; i++){
