@@ -6,7 +6,6 @@ public class Main {
         String a = sc.next();
         String b = sc.next();
 
-        System.out.println(a.length());
-        System.out.println(b.length());
+        System.out.println(a.length()+b.length());
     }
 }
