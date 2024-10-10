@@ -20,7 +20,7 @@ public class Main {
         if(flag == 0){
             System.out.println("true");
         }else{
-            System.out.println("flase");
+            System.out.println("false");
         }
 
     }
