@@ -7,7 +7,7 @@ public class Main {
         int Nalp = (int)alp;
 
         if(Nalp == 97){
-            Nalp = 112;
+            Nalp = 122;
         }else{
             Nalp--;
         }
