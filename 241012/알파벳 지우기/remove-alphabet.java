@@ -14,7 +14,7 @@ public class Main {
             }
         }
 
-        for(int i = 0 ; i < str.length() ; i++){
+        for(int i = 0 ; i < str2.length() ; i++){
             if('0' <= str2.charAt(i) && str2.charAt(i) <= '9'){
                 b += str2.charAt(i);
             }
