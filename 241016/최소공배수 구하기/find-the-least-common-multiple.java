@@ -13,7 +13,7 @@ public class Main {
             m = a;
         }
 
-        for(int i = 3 ; i < m ; i--){
+        for(int i = 3 ; i < m ; i++){
             if(n%i == 0 && m%i == 0){
                 min = i;
                 break;
