@@ -7,8 +7,13 @@ public class Main {
         n = sc.nextInt();
         m = sc.nextInt();
         min = 0;
+        if(n > m){
+            int a = n;
+            n = m;
+            m = a;
+        }
 
-        for(int i = 3 ; i < n ; i--){
+        for(int i = 3 ; i < m ; i--){
             if(n%i == 0 && m%i == 0){
                 min = i;
                 break;
