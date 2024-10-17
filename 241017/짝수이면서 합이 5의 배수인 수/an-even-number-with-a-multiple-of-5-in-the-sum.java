@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Main {
     public static boolean func(int n){
         boolean test;
-        if(n % 2 == 0){
+        if((n % 2 == 0) && ((n / 10) + (n - ((n / 10)*10))) % 5 == 0){
             test = true;
         }
         else{
