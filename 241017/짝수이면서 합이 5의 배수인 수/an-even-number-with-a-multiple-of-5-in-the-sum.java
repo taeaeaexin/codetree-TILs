@@ -2,10 +2,12 @@ import java.util.Scanner;
 public class Main {
     public static boolean func(int n){
         boolean test;
-        if(n % 2 == 0)
+        if(n % 2 == 0){
             test = true;
-        else
+        }
+        else{
             test = false;
+        }
 
         return test;
     }
