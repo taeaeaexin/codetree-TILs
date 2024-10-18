@@ -9,7 +9,7 @@ public class Main {
         int sum = 0;
 
         for(int i = a ; i <= b ; i++){
-            for(int j = 2 ; j < i ; j++){
+            for(int j = 3 ; j < i ; j++){
                 if(i % j == 0){
                     break;
                 }
