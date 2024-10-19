@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Main {
     public static int func(int a, int b){
-        int answer;
+        int answer = a;
         for(int i = 0 ; i < b ; i++){
             answer = answer*a;
         }
