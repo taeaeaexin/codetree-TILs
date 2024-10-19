@@ -3,7 +3,7 @@ public class Main {
     public static int func(int a, int b){
         int answer;
         for(int i = 0 ; i < b ; i++){
-            answer *= a;
+            answer = answer*a;
         }
         return a;
     }
