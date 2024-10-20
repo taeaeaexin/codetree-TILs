@@ -34,7 +34,7 @@ public class Main {
         }else if(o == '*'){
             System.out.println(a+" "+o+" "+c+" = "+func4(a, c));
         }else{
-            System.out.println("false");
+            System.out.println("False");
         }
     }
 }
