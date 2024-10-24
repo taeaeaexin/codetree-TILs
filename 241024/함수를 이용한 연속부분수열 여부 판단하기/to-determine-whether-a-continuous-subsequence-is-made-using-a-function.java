@@ -3,7 +3,7 @@ public class Main {
     public static boolean func(int A[], int B[], int n1, int n2){
         for(int i = 0 ; i < n1-n2 ; i++){
             int flag = 0;
-            for(int j = 0 ; j < n2 ; j++){
+            for(int j = 0 ; j <= n2 ; j++){
                 if(A[i+j] != B[j]){
                     break;
                 }else{
