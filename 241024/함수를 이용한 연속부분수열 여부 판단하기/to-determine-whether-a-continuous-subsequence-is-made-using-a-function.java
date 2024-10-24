@@ -4,14 +4,12 @@ public class Main {
         for(int i = 0 ; i < n1-n2 ; i++){
             int flag = 0;
             for(int j = 0 ; j < n2 ; j++){
-                for(int k = 0 ; k < n2 ; k++){
-                    if(A[i+k] != B[j+k]){
-                        break;
-                    }else{
+                if(A[i+j] != B[j]){
+                    break;
+                }else{
                     flag++;
                     if(flag == n2){
                         return true;
-                    }
                     }
                 }
             }
