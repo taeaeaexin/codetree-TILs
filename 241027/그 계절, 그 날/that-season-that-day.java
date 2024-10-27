@@ -2,17 +2,19 @@ import java.util.Scanner;
 public class Main {
     public static boolean func2 (int Y, int M, int D){
         if(M == 2){
-            if(Y % 4 == 0 || !(Y % 4 == 0 && Y % 100 == 0)){
+            if(Y % 4 == 0 && !(Y % 100 == 0)){
                 if(1 <= D && D <= 29){
                     return true;
+                }else{
+                    return false;
+                }
+            }else if(Y % 4 == 0 && Y % 400 == 0){
+                if(1 <= D && D <= 29){
+                    return true;
+                }else{
+                    return false;
                 }
             }
-        }else if(Y % 4 == 0 && Y % 400 == 0){
-                if(1 <= D && D <= 29){
-                    return true;
-                }
-        }else{
-            return false;
         }
 
         if(M == 1 || M == 3 || M == 5 || M == 7 || M == 8 || M == 10 || M == 12){
