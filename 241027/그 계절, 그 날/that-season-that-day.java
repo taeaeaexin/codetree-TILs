@@ -14,6 +14,10 @@ public class Main {
                 }else{
                     return false;
                 }
+            }else if(1 <= D && D <= 28){
+                return true;
+            }else{
+                return false;
             }
         }
 
