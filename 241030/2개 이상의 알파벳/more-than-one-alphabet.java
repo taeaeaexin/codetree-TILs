@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Main {
     public static boolean func(String A) {
-        int cnt = 0;
+        int cnt = 1;
         for(int i = 0 ; i < A.length()-2 ; i++){
             boolean flg = true;
             for(int j = i+1 ; j < A.length()-1 ; j++){
