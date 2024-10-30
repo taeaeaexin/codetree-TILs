@@ -5,7 +5,7 @@ public class Main {
     public static String B;
 
     public static int func(){
-        for(int i = 0 ; i <= A.length()-1 ; i++){
+        for(int i = 0 ; i < A.length()-1 ; i++){
             for(int j = 0 ; j <= B.length()-1 ; j++){
                 if(A.charAt(i+j) != B.charAt(j)){
                     break;
