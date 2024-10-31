@@ -15,6 +15,10 @@ public class Main {
         Arrays.sort(c_a);
         Arrays.sort(c_b);
 
+        if(a.length() != b.length()){
+            flag = false;
+        }
+
         for(int i = 0 ; i < a.length() ; i++){
             if(c_a[i] != c_b[i]){
                 flag = false;
