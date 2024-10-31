@@ -8,9 +8,18 @@ public class Main {
         int n = sc.nextInt();
         int A[] = new int[n];
         int B[] = new int[n];
-        boolean flag = true;
+        
+        for(int i = 0 ; i < n ; i++){
+            A[i] = sc.nextInt();
+        }
+
+        for(int i = 0 ; i < n ; i++){
+            B[i] = sc.nextInt();            
+        }
         Arrays.sort(A);
         Arrays.sort(B);
+
+        boolean flag = true;
         for(int i = 0 ; i < n ; i++){
             if(A[i] != B[i]){
                 flag = false;
