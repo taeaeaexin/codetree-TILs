@@ -15,10 +15,9 @@ public class Main {
         Arrays.sort(arr);
 
         for(int i = 0 ; i < N ; i++){
-            for(int j = 2*N - 1 ; j >= N ; j--){
+            int j = 2*N -i -1;
                 if(arr[i] + arr[j] > max){
                     max = arr[i] + arr[j];
-                }
             }
         }
         System.out.println(max);
