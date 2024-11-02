@@ -3,7 +3,7 @@ import java.util.Arrays;
 
 public class Main {
     public static void func(int arr[], int a){
-        Arrays.sort(arr,0,a);
+        Arrays.sort(arr,0,a+1);
         if(a == 0){
             System.out.print(arr[0]+" ");
         }else{
