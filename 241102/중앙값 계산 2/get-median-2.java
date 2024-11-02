@@ -4,7 +4,11 @@ import java.util.Arrays;
 public class Main {
     public static void func(int arr[], int a){
         Arrays.sort(arr,0,a);
-        System.out.print(arr[a/2]+" ");
+        if(a == 0){
+            System.out.print(arr[0]+" ");
+        }else{
+            System.out.print(arr[a/2]+" ");
+        }
     }
 
     public static void main(String[] args) {
