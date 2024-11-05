@@ -27,7 +27,7 @@ public class Main {
             String weather = sc.next();
             data[i] = new Data(date, day, weather);
 
-            if(weather.equals("Rain") && date.compareTo(min_date) < -1){
+            if(weather.equals("Rain") && date.compareTo(min_date) < 0){
                 min_date = date;
                 ans = new Data(date, day, weather);
             }
