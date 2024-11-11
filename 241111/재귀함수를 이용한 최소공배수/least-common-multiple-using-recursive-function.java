@@ -1,21 +1,21 @@
 import java.util.Scanner;
 public class Main {
-    public static int func(int arr[], int n){
-        if(n == 1)
-            return arr[0];
-        
-        return func2(arr[n-1], func(arr, n-1));
-    }
-
-    public static int func2(int a, int b){
-        return (a * b) / func3(a, b);
-    }
-
-    public static int func3(int a, int b){
-        if(b == 0){
+    public static int max(int a, int b){
+        if(b == 0)
             return a;
-        }
-        return func3(b, a % b);
+
+        return max(b, a % b);
+    }
+
+    public static int min(int a, int b){
+        return (a * b) / max(a, b);
+    }
+
+    public static int answer(int arr[], int n){
+        if(n == 0)
+            return arr[0];
+
+        return min(arr[n-1], answer(arr, n-1));
     }
 
     public static void main(String[] args) {
@@ -26,6 +26,6 @@ public class Main {
         for(int i = 0 ; i < n ; i++){
             arr[i] = sc.nextInt();
         }
-        System.out.println(func(arr, n));
+        System.out.println(answer(arr, n));
     }
 }
