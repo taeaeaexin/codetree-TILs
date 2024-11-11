@@ -6,7 +6,7 @@ public class Main {
         if(n == 2)
             return 2;
 
-        return (n-1) + n;
+        return func(n-2) + n;
     }
 
     public static void main(String[] args) {
