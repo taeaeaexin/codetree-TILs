@@ -17,7 +17,7 @@ public class Main {
         }else{
             answer = (a*24*60+b*60+c)-(11*24*60+11*60+11);
         }
-        System.out.println(answr);
+        System.out.println(answer);
 
     }
 }
